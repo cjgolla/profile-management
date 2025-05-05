@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.92 312.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: currentColor;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 40px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_4" data-name="Layer 4">
+    <path d="M88.23,263.01l-29.25-29.25c-3.25-3.25-3.25-8.51,0-11.76L239.13,41.85c7.7-7.7,20.19-7.7,27.9,0l13.12,13.12c7.7,7.7,7.7,20.19,0,27.9l-180.15,180.15c-3.25,3.25-8.51,3.25-11.76,0Z"/>
+    <path d="M12.38,309.41h0c-2.99-2.99-3.78-7.53-1.97-11.35l24.68-52.09c2.96-6.25,11.22-7.68,16.1-2.79l27.78,27.78c4.91,4.91,3.44,13.22-2.87,16.14l-52.46,24.31c-3.81,1.76-8.31.96-11.27-2Z"/>
+    <line class="cls-1" x1="27.33" y1="20" x2="165.15" y2="20"/>
+    <line class="cls-1" x1="20" y1="204.97" x2="20" y2="20"/>
+    <line class="cls-1" x1="240.43" y1="217.78" x2="240.43" y2="278.45"/>
+    <line class="cls-1" x1="152.57" y1="284.19" x2="240.43" y2="284.19"/>
+  </g>
+</svg>
