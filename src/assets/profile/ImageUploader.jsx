@@ -38,17 +38,20 @@ function ImageUploader({user, setUser, createUser}) {
         const data = await res.json();
         localStorage.setItem('uploadedImage', data.secure_url)
         setImage(data.secure_url);
-        
+        console.log(user.imageUrl)
+        console.log(data.secure_url)
         setUser({...user, imageUrl: data.secure_url})
         async function updateUser() {
           try {
-            await axios.post('http://localhost:5000/api/updateUser', {
+            await axios.put('http://localhost:5000/api/updateUser', {
               username: user.username,
               name: user.name,
               bio: user.bio,
-              imageUrl: user.imageUrl
+              imageUrl: data.secure_url
               
             })
+            console.log(user.imageUrl)
+            console.log("User updated")
           } catch (err) {
             console.log("Couldn't update user: ", err)
           }

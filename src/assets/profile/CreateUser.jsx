@@ -29,43 +29,43 @@ async function sendInfo() {
         <>
         <div>
             <ImageUploader user={user} setUser={setUser} createUser={true}/>
-            <input 
+            <input style={{display: "block"}}
                 name="firstName"
                 placeholder="First name"
                 value= {user.firstName}
                 onChange={handleChange}>     
             </input>
-            <input 
+            <input style={{display: "block"}}
                 name="lastName"
                 placeholder="Last name"
                 value= {user.lastName}
                 onChange={handleChange}>     
             </input>
-            <input 
+            <input style={{display: "block"}}
                 name="username"
                 placeholder="username"
                 value= {user.username}
                 onChange={handleChange}>     
             </input>
-            <input 
+            <input style={{display: "block"}}
                 name="password"
                 placeholder="Enter password"
                 value= {user.password}
                 onChange={handleChange}>     
             </input>
-            <input 
+            <input style={{display: "block"}}
                 name="email"
                 placeholder="Email"
                 value= {user.email}
                 onChange={handleChange}>     
             </input>
-            <input 
+            <input style={{display: "block"}}
                 name="bio"
                 placeholder="Enter Bio"
                 value= {user.bio}
                 onChange={handleChange}>     
             </input>
-            <button onClick={sendInfo}></button>
+            <button style={{color: "black"}} onClick={sendInfo}>Enter</button>
         </div>
         </>
     )

@@ -59,7 +59,7 @@ import '../../App.css'
       <>
         {!isEditing?
         <>
-        <DisplayInfo style={inputStyle} user={user} changeEditing={changeEditing}/></>:
+        <DisplayInfo style={inputStyle} user={user} setUser={setUser} changeEditing={changeEditing}/></>:
         <>
         <UpdateInfo user={user} style={inputStyle} visible={visible2} handleChange={handleChange} setUser={setUser} changeEditing={changeEditing}/>
         </>

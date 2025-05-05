@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose')
-const router = express.Router();
+const router = require('./router');
 const User = require('./models/User')
 const app = express();
 const cors = require('cors')
@@ -9,7 +9,10 @@ const uriUsers = "mongodb://localhost:27017/profileProject/users"
 const db = mongoose.connection.db
 
 const PORT = 5000;
-app.use(cors())
+app.use(cors({
+    origin: 'http://localhost:5173',
+    credentials: true
+  }));
 
 
 mongoose.connect(uri, {
@@ -20,7 +23,7 @@ mongoose.connect(uri, {
 }).catch(err => {
     console.log("Mongo connection error:", err);
 });
-
+/*
 router.get('/users',  async (req, res) => {
     try {
         const users = await User.find();
@@ -105,7 +108,7 @@ router.post('/createUser', async (req, res) => {
             res.send("Error creating user:", err)
         }
     }
-)
+) */
 app.use(express.json())
 app.use('/api', router)
 

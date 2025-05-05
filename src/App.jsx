@@ -1,17 +1,24 @@
 import { useState, useRef, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
 import DisplayUsers from './assets/profile/DisplayUsers'
 import MainPage from './assets/profile/MainPage'
 
-import { ReactComponent as CameraIcon } from './assets/cameraIcon.svg';
 import './App.css'
 import Profile from './assets/profile/Profile'
 import CreateUser from './assets/profile/CreateUser'
+import LogUser from './assets/profile/LogUser'
+import axios from 'axios'
+import UserStatus from './assets/profile/UserStatus'
+
+
 
 function App() {
+
   return (
     <>
+
+    <LogUser />
+    <UserStatus />
     <Router >
       <Routes>
         <Route path='/' element={<MainPage />}></Route>
